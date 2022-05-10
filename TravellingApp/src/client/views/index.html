@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>The Travelling site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+<body>
+
+<div class="parent">
+
+    <h1 class="header">Travel The World  </h1>
+    <div class="cityclass">
+
+        <input class= "city" type="datetime" placeholder="Select city">
+
+    </div>
+
+    <div class="startdateclass">
+
+        <div class="from"> From:</div>
+        <input class= "startdate" type="date" placeholder="Select starting date">
+
+
+    </div>
+
+    <form class="enddateclass">
+
+        <div class="to">To:</div>
+        <input class= "enddate" type="date" placeholder="Select end date">
+
+    </form>
+
+    <div class="resultclass">
+
+
+    </div>
+
+
+    <div class="imageclass">
+
+        <img id="myImg" src="../img/travel.jpg">
+
+    </div>
+
+
+
+    <div class="submitclass">
+
+
+        <button class="submit" type="button" >Submit</button></div></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        console.log("servcie workers are running")
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+</body>
+
+
+
+
+</html>
